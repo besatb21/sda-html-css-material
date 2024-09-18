@@ -1,0 +1,109 @@
+:root {
+    --primary-color: #78aaef;
+    --secondary-color: #668fbd;
+    --tertiary-color: #010080;
+    --menu-color: #6599e3;
+    --submenu-color: #4377dd;
+    --odd-color: #bbd5f6;
+
+    --head-color: #3376a9;
+}
+
+body {
+    font-family: "Arial", serif;
+    margin: 0;
+
+}
+
+.footer {
+    background: var(--tertiary-color);
+    text-align: center;
+    color: white;
+    width: 100%;
+    height:15vh ;
+
+}
+
+.all {
+    display: flex;
+    flex-direction: row;
+    height: 85vh;
+
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    padding-left: 10px;
+}
+
+li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li > ul > li {
+    background: var(--submenu-color);
+}
+
+
+.content {
+    width: 100%;
+    padding-left: 10px;
+    background: var(--primary-color);
+    overflow-y: scroll;
+}
+
+.navbar {
+    width: min(50vw, 200px);
+    background: var(--secondary-color);
+}
+
+a {
+    color: white;
+    text-decoration-line: none;
+
+}
+
+.navbar > ul {
+    background: var(--menu-color);
+}
+
+h1 {
+    color: var(--tertiary-color);
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+th {
+    color: white;
+
+    background: var(--head-color);
+}
+
+tr:nth-child(odd) {
+    background: var(--odd-color);
+}
+
+tr:nth-child(even) {
+    background: var(--primary-color);
+}
+
+
+p {
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
